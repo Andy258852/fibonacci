@@ -20,10 +20,10 @@ def main():
     set_config()
     logging.info('Input number of fibonacci sequence:')
     try:
-         logging.info(fibonacci(int(input())))
+        logging.info(fibonacci(int(input())))
     except ValueError:
-         logging.info('Incorrect input')
+        logging.info('Incorrect input')
 
 
-if __name__== "__main__":
+if __name__ == "__main__":
     main()
