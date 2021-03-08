@@ -133,9 +133,3 @@ dmypy.json
 
 #Docker
 Dockerfile
-
-#Checking tools
-flake8
-pylintrc
-requirements.txt
-Makefile
