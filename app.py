@@ -12,16 +12,18 @@ def fibonacci(n):
 def main():
     logging.basicConfig(format="%(message)s", level=logging.INFO)
     num = input("Input number of fibonacci sequence: ")
-    if (num.isdigit()):
+    if num.isdigit():
         logging.info(fibonacci(int(num)))
     else:
         logging.info("Incorrect input")
 
 
 if __name__ == "__main__":
-     try:
-         main()
-     except OverflowError:
-         logging.info("Number is too big")
-     except:
-         logging.info("Error")
+    try:
+        main()
+    except OverflowError:
+        logging.info("Too big number")
+    except KeyboardInterrupt:
+        logging.info("Error")
+    except EOFError:
+        logging.info("Error")
